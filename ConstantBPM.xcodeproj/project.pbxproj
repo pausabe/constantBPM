@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F88B72828E2F94500FABB2A /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F88B72728E2F94500FABB2A /* SettingsViewModel.swift */; };
 		5FC8CFA828E1970F00032DA4 /* ConstantBPM Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5FC8CFA728E1970F00032DA4 /* ConstantBPM Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5FC8CFAD28E1970F00032DA4 /* ConstantBPMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC8CFAC28E1970F00032DA4 /* ConstantBPMApp.swift */; };
-		5FC8CFAF28E1970F00032DA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC8CFAE28E1970F00032DA4 /* ContentView.swift */; };
+		5FC8CFAF28E1970F00032DA4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC8CFAE28E1970F00032DA4 /* MainView.swift */; };
 		5FC8CFB128E1971000032DA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FC8CFB028E1971000032DA4 /* Assets.xcassets */; };
 		5FC8CFB428E1971000032DA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FC8CFB328E1971000032DA4 /* Preview Assets.xcassets */; };
-		5FC8CFBE28E1971000032DA4 /* ConstantBPM_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC8CFBD28E1971000032DA4 /* ConstantBPM_Watch_AppTests.swift */; };
-		5FC8CFC828E1971000032DA4 /* ConstantBPM_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC8CFC728E1971000032DA4 /* ConstantBPM_Watch_AppUITests.swift */; };
-		5FC8CFCA28E1971000032DA4 /* ConstantBPM_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC8CFC928E1971000032DA4 /* ConstantBPM_Watch_AppUITestsLaunchTests.swift */; };
+		5FC8CFDB28E19EB700032DA4 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 5FC8CFDA28E19EB700032DA4 /* readme.md */; };
+		5FC8CFDE28E19F1900032DA4 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC8CFDD28E19F1900032DA4 /* MainViewModel.swift */; };
+		5FC8CFE128E19F5A00032DA4 /* UserConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC8CFE028E19F5A00032DA4 /* UserConstants.swift */; };
+		5FC8CFE728E1B3AC00032DA4 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC8CFE628E1B3AC00032DA4 /* HealthKit.framework */; };
+		5FC8CFF928E1B82800032DA4 /* Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC8CFEF28E1B82800032DA4 /* Framework.framework */; };
+		5FC8D00A28E2E4BE00032DA4 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC8D00928E2E4BE00032DA4 /* StartView.swift */; };
+		5FC8D00C28E2E4C600032DA4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC8D00B28E2E4C600032DA4 /* SettingsView.swift */; };
+		5FC8D00E28E2E66B00032DA4 /* FetchUserConstantsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC8D00D28E2E66B00032DA4 /* FetchUserConstantsService.swift */; };
+		5FC8D01028E2E67900032DA4 /* FetchUserConstantsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC8D00F28E2E67900032DA4 /* FetchUserConstantsServiceProtocol.swift */; };
+		5FC8D01328E2E73700032DA4 /* FetchUserConstantsServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC8D01228E2E73700032DA4 /* FetchUserConstantsServiceDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +47,13 @@
 			remoteGlobalIDString = 5FC8CFA628E1970F00032DA4;
 			remoteInfo = "ConstantBPM Watch App";
 		};
+		5FC8CFFA28E1B82800032DA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FC8CF9B28E1970F00032DA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FC8CFEE28E1B82800032DA4;
+			remoteInfo = Framework;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,17 +71,27 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5F88B72728E2F94500FABB2A /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		5FC8CFA128E1970F00032DA4 /* ConstantBPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConstantBPM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FC8CFA728E1970F00032DA4 /* ConstantBPM Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ConstantBPM Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FC8CFAC28E1970F00032DA4 /* ConstantBPMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantBPMApp.swift; sourceTree = "<group>"; };
-		5FC8CFAE28E1970F00032DA4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5FC8CFAE28E1970F00032DA4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		5FC8CFB028E1971000032DA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FC8CFB328E1971000032DA4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5FC8CFB928E1971000032DA4 /* ConstantBPM Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ConstantBPM Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FC8CFBD28E1971000032DA4 /* ConstantBPM_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantBPM_Watch_AppTests.swift; sourceTree = "<group>"; };
 		5FC8CFC328E1971000032DA4 /* ConstantBPM Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ConstantBPM Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FC8CFC728E1971000032DA4 /* ConstantBPM_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantBPM_Watch_AppUITests.swift; sourceTree = "<group>"; };
-		5FC8CFC928E1971000032DA4 /* ConstantBPM_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantBPM_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5FC8CFDA28E19EB700032DA4 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		5FC8CFDD28E19F1900032DA4 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		5FC8CFE028E19F5A00032DA4 /* UserConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserConstants.swift; sourceTree = "<group>"; };
+		5FC8CFE428E1B39400032DA4 /* ConstantBPM Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ConstantBPM Watch App.entitlements"; sourceTree = "<group>"; };
+		5FC8CFE628E1B3AC00032DA4 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS9.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		5FC8CFEF28E1B82800032DA4 /* Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC8CFF828E1B82800032DA4 /* FrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC8D00928E2E4BE00032DA4 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		5FC8D00B28E2E4C600032DA4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		5FC8D00D28E2E66B00032DA4 /* FetchUserConstantsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUserConstantsService.swift; sourceTree = "<group>"; };
+		5FC8D00F28E2E67900032DA4 /* FetchUserConstantsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUserConstantsServiceProtocol.swift; sourceTree = "<group>"; };
+		5FC8D01228E2E73700032DA4 /* FetchUserConstantsServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUserConstantsServiceDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FC8CFE728E1B3AC00032DA4 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,16 +117,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5FC8CFEC28E1B82800032DA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC8CFF528E1B82800032DA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FC8CFF928E1B82800032DA4 /* Framework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		5FC8CF9A28E1970F00032DA4 = {
 			isa = PBXGroup;
 			children = (
+				5FC8CFDA28E19EB700032DA4 /* readme.md */,
 				5FC8CFAB28E1970F00032DA4 /* ConstantBPM Watch App */,
-				5FC8CFBC28E1971000032DA4 /* ConstantBPM Watch AppTests */,
-				5FC8CFC628E1971000032DA4 /* ConstantBPM Watch AppUITests */,
 				5FC8CFA228E1970F00032DA4 /* Products */,
+				5FC8CFE528E1B3AC00032DA4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +152,8 @@
 				5FC8CFA728E1970F00032DA4 /* ConstantBPM Watch App.app */,
 				5FC8CFB928E1971000032DA4 /* ConstantBPM Watch AppTests.xctest */,
 				5FC8CFC328E1971000032DA4 /* ConstantBPM Watch AppUITests.xctest */,
+				5FC8CFEF28E1B82800032DA4 /* Framework.framework */,
+				5FC8CFF828E1B82800032DA4 /* FrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,8 +161,12 @@
 		5FC8CFAB28E1970F00032DA4 /* ConstantBPM Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				5FC8CFE428E1B39400032DA4 /* ConstantBPM Watch App.entitlements */,
 				5FC8CFAC28E1970F00032DA4 /* ConstantBPMApp.swift */,
-				5FC8CFAE28E1970F00032DA4 /* ContentView.swift */,
+				5FC8CFE228E19F6800032DA4 /* Model */,
+				5FC8CFDC28E19EF700032DA4 /* View */,
+				5FC8CFDF28E19F1C00032DA4 /* ViewModel */,
+				5FC8D01128E2E68000032DA4 /* Service */,
 				5FC8CFB028E1971000032DA4 /* Assets.xcassets */,
 				5FC8CFB228E1971000032DA4 /* Preview Content */,
 			);
@@ -134,24 +181,62 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		5FC8CFBC28E1971000032DA4 /* ConstantBPM Watch AppTests */ = {
+		5FC8CFDC28E19EF700032DA4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5FC8CFBD28E1971000032DA4 /* ConstantBPM_Watch_AppTests.swift */,
+				5FC8CFAE28E1970F00032DA4 /* MainView.swift */,
+				5FC8D00928E2E4BE00032DA4 /* StartView.swift */,
+				5FC8D00B28E2E4C600032DA4 /* SettingsView.swift */,
 			);
-			path = "ConstantBPM Watch AppTests";
+			path = View;
 			sourceTree = "<group>";
 		};
-		5FC8CFC628E1971000032DA4 /* ConstantBPM Watch AppUITests */ = {
+		5FC8CFDF28E19F1C00032DA4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				5FC8CFC728E1971000032DA4 /* ConstantBPM_Watch_AppUITests.swift */,
-				5FC8CFC928E1971000032DA4 /* ConstantBPM_Watch_AppUITestsLaunchTests.swift */,
+				5FC8CFDD28E19F1900032DA4 /* MainViewModel.swift */,
+				5F88B72728E2F94500FABB2A /* SettingsViewModel.swift */,
 			);
-			path = "ConstantBPM Watch AppUITests";
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5FC8CFE228E19F6800032DA4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5FC8CFE028E19F5A00032DA4 /* UserConstants.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5FC8CFE528E1B3AC00032DA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FC8CFE628E1B3AC00032DA4 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5FC8D01128E2E68000032DA4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5FC8D00D28E2E66B00032DA4 /* FetchUserConstantsService.swift */,
+				5FC8D00F28E2E67900032DA4 /* FetchUserConstantsServiceProtocol.swift */,
+				5FC8D01228E2E73700032DA4 /* FetchUserConstantsServiceDelegate.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5FC8CFEA28E1B82800032DA4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		5FC8CFA028E1970F00032DA4 /* ConstantBPM */ = {
@@ -224,6 +309,42 @@
 			productReference = 5FC8CFC328E1971000032DA4 /* ConstantBPM Watch AppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		5FC8CFEE28E1B82800032DA4 /* Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FC8D00028E1B82900032DA4 /* Build configuration list for PBXNativeTarget "Framework" */;
+			buildPhases = (
+				5FC8CFEA28E1B82800032DA4 /* Headers */,
+				5FC8CFEB28E1B82800032DA4 /* Sources */,
+				5FC8CFEC28E1B82800032DA4 /* Frameworks */,
+				5FC8CFED28E1B82800032DA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Framework;
+			productName = Framework;
+			productReference = 5FC8CFEF28E1B82800032DA4 /* Framework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5FC8CFF728E1B82800032DA4 /* FrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FC8D00328E1B82900032DA4 /* Build configuration list for PBXNativeTarget "FrameworkTests" */;
+			buildPhases = (
+				5FC8CFF428E1B82800032DA4 /* Sources */,
+				5FC8CFF528E1B82800032DA4 /* Frameworks */,
+				5FC8CFF628E1B82800032DA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FC8CFFB28E1B82800032DA4 /* PBXTargetDependency */,
+			);
+			name = FrameworkTests;
+			productName = FrameworkTests;
+			productReference = 5FC8CFF828E1B82800032DA4 /* FrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -248,6 +369,12 @@
 						CreatedOnToolsVersion = 14.0;
 						TestTargetID = 5FC8CFA628E1970F00032DA4;
 					};
+					5FC8CFEE28E1B82800032DA4 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					5FC8CFF728E1B82800032DA4 = {
+						CreatedOnToolsVersion = 14.0;
+					};
 				};
 			};
 			buildConfigurationList = 5FC8CF9E28E1970F00032DA4 /* Build configuration list for PBXProject "ConstantBPM" */;
@@ -267,6 +394,8 @@
 				5FC8CFA628E1970F00032DA4 /* ConstantBPM Watch App */,
 				5FC8CFB828E1971000032DA4 /* ConstantBPM Watch AppTests */,
 				5FC8CFC228E1971000032DA4 /* ConstantBPM Watch AppUITests */,
+				5FC8CFEE28E1B82800032DA4 /* Framework */,
+				5FC8CFF728E1B82800032DA4 /* FrameworkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -276,6 +405,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FC8CFDB28E19EB700032DA4 /* readme.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +432,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5FC8CFED28E1B82800032DA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC8CFF628E1B82800032DA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -309,8 +453,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FC8CFAF28E1970F00032DA4 /* ContentView.swift in Sources */,
+				5FC8CFAF28E1970F00032DA4 /* MainView.swift in Sources */,
+				5FC8D00E28E2E66B00032DA4 /* FetchUserConstantsService.swift in Sources */,
+				5FC8D00A28E2E4BE00032DA4 /* StartView.swift in Sources */,
+				5FC8D01028E2E67900032DA4 /* FetchUserConstantsServiceProtocol.swift in Sources */,
+				5FC8D01328E2E73700032DA4 /* FetchUserConstantsServiceDelegate.swift in Sources */,
 				5FC8CFAD28E1970F00032DA4 /* ConstantBPMApp.swift in Sources */,
+				5FC8D00C28E2E4C600032DA4 /* SettingsView.swift in Sources */,
+				5F88B72828E2F94500FABB2A /* SettingsViewModel.swift in Sources */,
+				5FC8CFE128E19F5A00032DA4 /* UserConstants.swift in Sources */,
+				5FC8CFDE28E19F1900032DA4 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +470,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FC8CFBE28E1971000032DA4 /* ConstantBPM_Watch_AppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,8 +477,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FC8CFCA28E1971000032DA4 /* ConstantBPM_Watch_AppUITestsLaunchTests.swift in Sources */,
-				5FC8CFC828E1971000032DA4 /* ConstantBPM_Watch_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC8CFEB28E1B82800032DA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC8CFF428E1B82800032DA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +511,11 @@
 			isa = PBXTargetDependency;
 			target = 5FC8CFA628E1970F00032DA4 /* ConstantBPM Watch App */;
 			targetProxy = 5FC8CFC428E1971000032DA4 /* PBXContainerItemProxy */;
+		};
+		5FC8CFFB28E1B82800032DA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FC8CFEE28E1B82800032DA4 /* Framework */;
+			targetProxy = 5FC8CFFA28E1B82800032DA4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -466,6 +634,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ConstantBPM Watch App/ConstantBPM Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ConstantBPM Watch App/Preview Content\"";
@@ -473,6 +642,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = ConstantBPM;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Use of the Health Share Usage";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Use of the Health Update Usage";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -496,6 +667,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ConstantBPM Watch App/ConstantBPM Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ConstantBPM Watch App/Preview Content\"";
@@ -503,6 +675,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = ConstantBPM;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Use of the Health Share Usage";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Use of the Health Update Usage";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -639,6 +813,108 @@
 			};
 			name = Release;
 		};
+		5FC8D00128E1B82900032DA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AMRG6X9H9J;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pausabe.Framework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		5FC8D00228E1B82900032DA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AMRG6X9H9J;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pausabe.Framework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		5FC8D00428E1B82900032DA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AMRG6X9H9J;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pausabe.FrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		5FC8D00528E1B82900032DA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AMRG6X9H9J;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pausabe.FrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -683,6 +959,24 @@
 			buildConfigurations = (
 				5FC8CFD828E1971000032DA4 /* Debug */,
 				5FC8CFD928E1971000032DA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FC8D00028E1B82900032DA4 /* Build configuration list for PBXNativeTarget "Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FC8D00128E1B82900032DA4 /* Debug */,
+				5FC8D00228E1B82900032DA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FC8D00328E1B82900032DA4 /* Build configuration list for PBXNativeTarget "FrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FC8D00428E1B82900032DA4 /* Debug */,
+				5FC8D00528E1B82900032DA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
