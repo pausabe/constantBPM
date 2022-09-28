@@ -11,7 +11,7 @@ import HealthKit
 class FetchUserConstantsService: FetchUserConstantsServiceProtocol{
     var delegate: FetchUserConstantsServiceDelegate?
     var timer: Timer?
-    let timeInterval = 1.0
+    let timeInterval = 5.0
     let healthStore = HKHealthStore()
     var workoutSession: HKWorkoutSession?
     

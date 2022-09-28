@@ -17,7 +17,7 @@ class MainViewModel: ObservableObject, FetchUserConstantsServiceDelegate{
     
     var fetchUserConstantsService: FetchUserConstantsServiceProtocol
     var currentlyFetching = false
-    let heartRateTargetOffset = 0
+    let heartRateTargetOffset = 10
     
     let defaults = UserDefaults.standard
             
