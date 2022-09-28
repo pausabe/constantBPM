@@ -15,7 +15,7 @@ struct MainView: View {
     var body: some View {
         NavigationView{
             ZStack{
-                Color(UIColor(red: 0.15, green: 0.68, blue: 0.38, alpha: 1.00))
+                Color(mainViewModel.currentColor ?? .darkGray)
                 HStack {
                     Text(String(Int(mainViewModel.userConstants.heartRate)))
                         .font(.title)

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5F88B72828E2F94500FABB2A /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F88B72728E2F94500FABB2A /* SettingsViewModel.swift */; };
+		5F88B72A28E4463900FABB2A /* DefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F88B72928E4463900FABB2A /* DefaultsKeys.swift */; };
 		5FC8CFA828E1970F00032DA4 /* ConstantBPM Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5FC8CFA728E1970F00032DA4 /* ConstantBPM Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5FC8CFAD28E1970F00032DA4 /* ConstantBPMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC8CFAC28E1970F00032DA4 /* ConstantBPMApp.swift */; };
 		5FC8CFAF28E1970F00032DA4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC8CFAE28E1970F00032DA4 /* MainView.swift */; };
@@ -72,6 +73,7 @@
 
 /* Begin PBXFileReference section */
 		5F88B72728E2F94500FABB2A /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		5F88B72928E4463900FABB2A /* DefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsKeys.swift; sourceTree = "<group>"; };
 		5FC8CFA128E1970F00032DA4 /* ConstantBPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConstantBPM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FC8CFA728E1970F00032DA4 /* ConstantBPM Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ConstantBPM Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FC8CFAC28E1970F00032DA4 /* ConstantBPMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantBPMApp.swift; sourceTree = "<group>"; };
@@ -135,6 +137,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F88B72B28E4463C00FABB2A /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+				5F88B72928E4463900FABB2A /* DefaultsKeys.swift */,
+			);
+			path = Keys;
+			sourceTree = "<group>";
+		};
 		5FC8CF9A28E1970F00032DA4 = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +177,7 @@
 				5FC8CFDC28E19EF700032DA4 /* View */,
 				5FC8CFDF28E19F1C00032DA4 /* ViewModel */,
 				5FC8D01128E2E68000032DA4 /* Service */,
+				5F88B72B28E4463C00FABB2A /* Keys */,
 				5FC8CFB028E1971000032DA4 /* Assets.xcassets */,
 				5FC8CFB228E1971000032DA4 /* Preview Content */,
 			);
@@ -463,6 +474,7 @@
 				5F88B72828E2F94500FABB2A /* SettingsViewModel.swift in Sources */,
 				5FC8CFE128E19F5A00032DA4 /* UserConstants.swift in Sources */,
 				5FC8CFDE28E19F1900032DA4 /* MainViewModel.swift in Sources */,
+				5F88B72A28E4463900FABB2A /* DefaultsKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

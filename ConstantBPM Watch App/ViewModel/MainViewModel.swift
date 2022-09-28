@@ -6,12 +6,20 @@
 //
 
 import Foundation
+import SwiftUI
 
 class MainViewModel: ObservableObject, FetchUserConstantsServiceDelegate{
-    @Published var userConstants = UserConstants()
-    var fetchUserConstantsService: FetchUserConstantsServiceProtocol
+    let okColor = UIColor(red: 0.15, green: 0.68, blue: 0.38, alpha: 1.00)
+    let notOkColor = UIColor(red: 0.80, green: 0.00, blue: 0.00, alpha: 1.00)
     
+    @Published var userConstants = UserConstants()
+    @Published var currentColor: UIColor?
+    
+    var fetchUserConstantsService: FetchUserConstantsServiceProtocol
     var currentlyFetching = false
+    let heartRateTargetOffset = 0
+    
+    let defaults = UserDefaults.standard
             
     init(){
         fetchUserConstantsService = FetchUserConstantsService()
@@ -34,6 +42,7 @@ class MainViewModel: ObservableObject, FetchUserConstantsServiceDelegate{
     func stopFetching(){
         currentlyFetching = false
         fetchUserConstantsService.stopFetching()
+        currentColor = nil
     }
     
     func onTapGesture(){
@@ -45,9 +54,25 @@ class MainViewModel: ObservableObject, FetchUserConstantsServiceDelegate{
         }
     }
 
+    func correctHeartRate() -> Bool{
+        let heartRateTarget = defaults.integer(forKey: DefaultsKeys.heartRateTarget)
+        if Int(userConstants.heartRate) > heartRateTarget + heartRateTargetOffset {
+            return false
+        }
+        else if Int(userConstants.heartRate) < heartRateTarget - heartRateTargetOffset {
+            return false
+        }
+        return true
+    }
+    
     func userConstantsUpdated(_ userConstants: UserConstants) {
         DispatchQueue.main.async {
             self.userConstants = userConstants
+            var backgroundColor = self.notOkColor
+            if self.correctHeartRate(){
+                backgroundColor = self.okColor
+            }
+            self.currentColor = backgroundColor
         }
     }
 }
